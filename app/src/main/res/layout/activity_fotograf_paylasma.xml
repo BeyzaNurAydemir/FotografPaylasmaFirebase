@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.FotografPaylasmaActivity">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="386dp"
+            android:layout_height="202dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="43dp"
+            android:onClick="gorselSec"
+            app:layout_constraintBottom_toTopOf="@+id/yorumText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gorsel" />
+
+        <EditText
+            android:id="@+id/yorumText"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginEnd="37dp"
+            android:layout_marginBottom="53dp"
+            android:ems="10"
+            android:hint="Yorumunuzu Giriniz:"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="162dp"
+            android:background="#74B1E3"
+            android:onClick="paylas"
+            android:text="Paylaş"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yorumText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

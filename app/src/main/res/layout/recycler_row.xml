@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/recycler_row_kullanici_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Kullanıcı emaili"
+            android:textColor="#0E08BD"
+            android:textSize="20sp"></TextView>
+
+        <ImageView
+            android:id="@+id/recycler_row_imageview"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/ic_launcher_background"></ImageView>
+
+        <TextView
+            android:id="@+id/recycler_row_kullanici_yorum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Kullanıcı Yorumu"
+            android:textColor="#293673"
+            android:textSize="18sp"></TextView>
+
+    </LinearLayout>
+</layout>
